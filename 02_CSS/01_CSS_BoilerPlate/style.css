@@ -7,10 +7,52 @@
 html,body{
     width: 100%;
     height: 100%;
+    font-size: 12px;
 }
 
-.main{
-    width: 300px;
-    height: 300px;
+#test{
+    /*  width: 800px; when screen reduces one scroll is come(actually hide a data)-> it degrade user experience & px size vary based on screen resolution */
+    /*  height: 300px; when screen reduces one scroll is come(actually hide a data)-> it degrade user experience & px size vary based on screen resolution */
+
+
+    /*  width: 50%;  it change screen size change */
+     /* height: 50%; it change screen size change */
+
+    background-color: red;
+}
+
+#practice{
+    /* width: 800px;
+    height: 300px; */
+    background-color: red;
+}
+
+/* #child{
+      width: 100%;    it cover only parent div scope 
+      height: 100%;   it cover only parent div scope 
+
+         width: 100vw;   it cover visible width
+         height: 100vh;  it cover visible height
+    background-color: yellow;
+} */
+
+/* #test1{ 
+    font-size: 12px;         1em(emphasis element) = font_size of current element
+    width: 20em;                20em = font_size * 20
+    height: 20em;
+    background-color: red; 
+} */
+
+/* #test2{
+     width: 2rem;        rem(root emphasis element) based on font-size of html tag
+     height: 2rem;       rem(root emphasis element) based on font-size of html tag
+    background-color: red; 
+} */
+
+#test3{
+    width: 10px;
+    min-width: 200px;
+    max-width: 500px;
+    height: 200px;
     background-color: red;
 }
