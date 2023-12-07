@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#card1{
+    width: 100px;
+    height: 140px;
+    background-color: red;
+}
+#card2{
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background-color: orange;
+}
+#card3{
+    width: 105px;
+    height: 90px;
+    background-color: green;
+}
