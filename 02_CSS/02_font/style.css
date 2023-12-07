@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* h1{
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: wavy;
+} */
+
+/* Font size awlay prefered to write in vw or vh->change based on screen-size , bcz px is never change based on screen-size */
+/* h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vw;
+} */
+
+/* Line-height = 1 -> remove extras spaces */
+/* h1{
+    line-height: 10px;
+    line-height: 1;
+} */
+
+/* text-align -> justify never give a space*/
+h1{
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+    text-align: center;
+}
