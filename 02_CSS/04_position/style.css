@@ -6,7 +6,7 @@
 
 html,body{
     width: 100%;
-    height: 100%;
+    height: 300%;
 }
 
 /* #card1{
@@ -26,7 +26,7 @@ html,body{
     background-color: green;
 } */
 
-#box{
+/* #box{
     position: relative;
     width: 300px;
     height: 300px;
@@ -39,4 +39,11 @@ html,body{
     width: 30px;
     height: 30px;
     background-color: yellow;
+} */
+
+#box{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: red;
 }
