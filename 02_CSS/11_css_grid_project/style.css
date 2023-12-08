@@ -54,29 +54,105 @@ body {
     background-color: #ededed;
     display: grid;
     grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 30% 50% 20%;
+    grid-template-rows: 26% 56% 18%;
 }
 
-#left-top-left{
-    background-color: crimson;
+#left-top-left {
+    /* background-color: crimson; */
+    padding: 40px;
 }
 
-#left-top-right{
-    background-color: blueviolet;
+#square {
+    height: 16px;
+    width: 16px;
+    rotate: 45deg;
+    background-color: black;
 }
 
-#right{
-    background-color: aqua;
+
+#left-top-right {
+    /* background-color: blueviolet; */
+    justify-self: right;
+    padding: 25px;
+    text-align: right;
+}
+
+#left-top-right h4 {
+    /* background-color: red; */
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#left-top-right h5 {
+    /* background-color: red; */
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+
+#left-center {
+    /* background-color: royalblue; */
+    grid-column: 1 / 3;
+    padding: 20px;
+}
+
+#left-center h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    line-height: 5.8vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#left-center h1:nth-child(2n){
+    /* background-color: red; */
+    text-align: center;
+}
+
+#left-bottom {
+    /* background-color: chartreuse; */
+    grid-column: 1 / 3;
+    padding: 20px;
+}
+
+#left-bottom p{
+    width: 70%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+}
+
+#right {
+    /* background-color: aqua; */
     grid-column: 3;
     grid-row: 1 / 4;
+    padding: 20px;
+    padding-right: 90px;
 }
 
-#left-center{
-    background-color: royalblue;
-    grid-column: 1 / 3;
+#right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
 }
 
-#left-bottom{
-    background-color: chartreuse;
-    grid-column: 1 / 3;
+#arrow{
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#arrow i{
+    font-size: 40px;
+    font-weight: 100;
 }
