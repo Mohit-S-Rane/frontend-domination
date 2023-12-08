@@ -90,6 +90,9 @@ body {
     font-weight: 500;
     color: #333;
 }
+#left-top-right h6 {
+    display: none;
+}
 
 #left-center {
     /* background-color: royalblue; */
@@ -97,7 +100,7 @@ body {
     padding: 20px;
 }
 
-#left-center h1{
+#left-center h1 {
     font-size: 6.5vw;
     text-transform: uppercase;
     line-height: 5.8vw;
@@ -105,7 +108,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#left-center h1:nth-child(2n){
+#left-center h1:nth-child(2n) {
     /* background-color: red; */
     text-align: center;
 }
@@ -116,7 +119,7 @@ body {
     padding: 20px;
 }
 
-#left-bottom p{
+#left-bottom p {
     width: 70%;
     font-size: 16px;
     font-weight: 500;
@@ -131,14 +134,14 @@ body {
     padding-right: 90px;
 }
 
-#right video{
+#right video {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 3px;
 }
 
-#arrow{
+#arrow {
     position: absolute;
     top: 50%;
     left: 51%;
@@ -152,7 +155,101 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#arrow i{
+#arrow i {
     font-size: 40px;
     font-weight: 100;
+}
+
+@media (max-width:600px) {
+    #main {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 30% 10%;
+    }
+
+    #left-top-left {
+        /* background-color: crimson; */
+        padding: 20px;
+    }
+
+    #square {
+        height: 12px;
+        width: 12px;
+        rotate: 45deg;
+        background-color: black;
+    }
+
+
+    #left-top-right {
+        /* background-color: blueviolet; */
+        /* justify-self: right; */
+        padding: 20px;
+        text-align: right;
+    }
+
+    #left-top-right h4 {
+        display: none;
+    }
+
+    #left-top-right h5 {
+        display: none;
+    }
+
+    #left-top-right h6 {
+        display: initial;
+        font-size: 20px;
+    }
+
+    #left-center {
+        /* background-color: royalblue; */
+        /* grid-column: 1 / 3; */
+        padding: 15px;
+    }
+
+    #left-center h1 {
+        font-size: 16vw;
+        line-height: 14vw;
+    }
+
+    #left-center h1:nth-child(2n) {
+        /* background-color: red; */
+        text-align: right;
+    }
+
+    #left-bottom {
+        /* background-color: chartreuse; */
+        grid-column: 1 / 3;
+        padding: 5px 20px;
+    }
+
+    #left-bottom p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #right video {
+        height: 50vh;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+
+    #arrow {
+        top: 48%;
+        left: 40%;
+        padding: 10px;
+        rotate: 90deg;
+    }
+
+    #arrow i {
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    #right {
+        /* background-color: aqua; */
+        grid-column: 1 /4;
+        grid-row: 4;
+        padding: 20px;
+        /* padding-right: 90px; */
+    }
+
 }
