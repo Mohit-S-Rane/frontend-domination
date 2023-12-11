@@ -104,9 +104,9 @@ body {
     opacity: 1;
 }
 
-.elem:hover a {
+/* .elem:hover a {
     text-decoration: underline;
-}
+} */
 
 #bottom{
     height: 74px;
