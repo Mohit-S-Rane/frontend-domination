@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: "work sans";
 }
 
 html,
@@ -15,19 +15,21 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 70px;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    padding: 0px 70px;
     padding-top: 100px;
+    gap: 60px;
 }
 
 #left {
     height: 100%;
-    width: 48%;
+    width: 42%;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 #left h1 {
@@ -35,12 +37,6 @@ body {
     font-weight: 500;
     line-height: 100px;
     font-family: Work Sans;
-}
-
-#right {
-    height: 100%;
-    width: 48%;
-    background-color: yellow;
 }
 
 #bottom-left {
@@ -89,9 +85,77 @@ body {
 }
 
 #left p {
-    font-size: 18px;
+    font-size: 12px;
     width: 80%;
     font-weight: 600;
     color: #444;
     line-height: 22px;
+}
+
+#right {
+    height: 90%;
+    width: 33%;
+    position: relative;
+    /* background-color: red; */
+}
+
+#right-top{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    padding-right: 20px;
+}
+
+#right-top h4{
+    font-size: 20px;
+    font-family: work sans;
+    font-weight: 500;
+}
+
+#right-top h5{
+    font-size: 16px;
+}
+
+#right-top h5 i{
+    color: goldenrod;
+}
+
+#right img{
+    width: 100%;
+    height: 88%;
+    /* object-fit: cover; */
+    /* background-size: cover;
+    background-position: 0 46%; */
+}
+
+#black-gola{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(21, 21, 60);
+    color: #fff;
+    right: -10%;
+    top: 44%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#black-gola h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#rotated{
+    position: absolute;
+    left: -35px;
+    bottom: 0;
+    /* background-color: red; */
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size: 28px;
 }
