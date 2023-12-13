@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "work sans";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#nav {
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#nav-part2 h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#nav-part2 h4 span {
+    color: rgb(113, 113, 115);
+    margin-left: 16px;
+}
+
+.gola {
+    height: 24px;
+    width: 24px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+#nav2 {
+    height: 50px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 30px;
+}
+
+#nav2 h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#content{
+    height: calc(100% - 136px);
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+#text-content{
+    height: 45%;
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 55%;
+    /* background-color: red; */
+    /* border: 2px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1{
+    font-size: 85px;
+    font-weight: 300;
+}
+
+#image-content{
+    height: 60%;
+    width: 100%;
+    background-color: palevioletred;
+    display: flex;
+    overflow-x: auto;
+}
+
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+
+#image-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: 0px -290px; */
+}
