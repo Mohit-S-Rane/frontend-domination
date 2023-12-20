@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "work sans";
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-#main{
+#main {
     height: 100%;
     width: 100%;
     background-color: #f8f8f8;
@@ -18,7 +19,7 @@ html,body{
     padding-top: 0.1px;
 }
 
-#nav{
+#nav {
     height: 12vh;
     width: 100%;
     /* background-color: red; */
@@ -30,7 +31,7 @@ html,body{
     justify-content: space-between;
 }
 
-#nav h1{
+#nav h1 {
     /* font-size: 16px; */
     /* background-color: yellow; */
     height: 100%;
@@ -43,7 +44,7 @@ html,body{
     letter-spacing: -1.5px;
 }
 
-#nav h2{
+#nav h2 {
     /* background-color: yellow; */
     height: 100%;
     width: 21%;
@@ -55,7 +56,77 @@ html,body{
     font-weight: 700;
 }
 
-#nav :nth-last-child(1){
+#nav :nth-last-child(1) {
     width: 10%;
     /* background-color: red; */
+}
+
+#center {
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 2vw;
+    color: #fff;
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+
+#over1 h1 {
+    font-family: monument;
+    font-size: 4vw;
+    /* font-weight: 100; */
+    mix-blend-mode: difference;
+}
+
+#over1 h2 {
+    font-size: 1vw;
+    padding: 2vw 2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+#over2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+
+#over2 h2 {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+#over2 img {
+    height: 3vw;
 }
