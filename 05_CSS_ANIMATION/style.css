@@ -131,7 +131,7 @@ h1::after{
     font-size: 50px;
 } */
 
-#box{
+/* #box{
     height: 200px;
     width: 200px;    
     background-color: red;
@@ -143,4 +143,42 @@ h1::after{
 
 #box::before{
     content: "Before content";
+} */
+
+body{
+    background-color: black;
+    padding: 5vw;
+}
+
+button{
+    color: cyan;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid cyan;
+    font-weight: 600;
+    position: relative;
+    transition: all linear 0.3s;
+    overflow: hidden;
+}
+
+button::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: cyan;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: all linear 0.3s;
+    z-index: -1;
+}
+
+button:hover::after{
+    transform: translate(-50%,-50%) scale(3);
+}
+
+button:hover{
+    color: black;
 }
