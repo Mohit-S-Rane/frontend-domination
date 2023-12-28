@@ -1,15 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  "work sans";
+    font-family: "work sans";
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
+/* 
 #parent{
     height: 100%;
     width: 100%;
@@ -25,4 +27,24 @@ html,body{
     width: 150px;
     background-color: crimson;
     border: 2px solid #ffff;
+} */
+
+#parent {
+    min-height: 100%;
+    width: 100%;
+    background-color: crimson;
+}
+
+#child1 {
+    height: 100vh;
+    width: 60%;
+    background-color: lightblue;
+    border: 6px solid black;
+}
+
+#child2 {
+    height: 100vh;
+    width: 60%;
+    background-color: lightgreen;
+    border: 6px solid black;
 }
