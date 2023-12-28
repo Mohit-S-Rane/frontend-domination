@@ -76,7 +76,7 @@ body {
     
 } */
 
-#box1 {
+/* #box1 {
     height: 300px;
     width: 300px;
     background-color: crimson;
@@ -112,4 +112,35 @@ body {
     to {
         left: 75%;
     }
+} */
+/* 
+h1{
+    font-size: 100px;
+    color: red;
+}
+
+h1::before{
+    content: " 💖 /";
+    color: purple;
+    font-size: 40px;
+}
+
+h1::after{
+    content: "\\ 💖 ";
+    color: blue;
+    font-size: 50px;
+} */
+
+#box{
+    height: 200px;
+    width: 200px;    
+    background-color: red;
+}
+
+#box::after{
+    content: "After content";
+}
+
+#box::before{
+    content: "Before content";
 }
