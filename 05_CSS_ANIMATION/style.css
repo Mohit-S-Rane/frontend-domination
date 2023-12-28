@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "work sans";
-    font-family: "work sans";
 }
 
 html,
@@ -12,7 +11,7 @@ body {
     width: 100%;
 }
 
-#box {
+/* #box {
     margin-top: 10%;
     height: 250px;
     width: 250px;
@@ -33,6 +32,44 @@ body {
     to{
         left: 60%;
         background-color: blue;
+        rotate: 360deg;
+    }
+    
+} */
+
+img{
+    height: 300px;
+    position: absolute;
+    animation-name: chutki;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes chutki {
+    /* from{
+        top: 0;
+        left: 0;
+    }
+
+    to{
+        left: 80%;
+        top: 50%;
+    } */
+    0%{
+        left: 0;
+        top: 0;
+        rotate: 0deg;
+    }
+
+    50%{
+        left: 80%;
+        top: 0;
+        rotate: 0deg;
+    }
+
+    100%{
+        left: 80%;
+        top: 50%;
         rotate: 360deg;
     }
     
