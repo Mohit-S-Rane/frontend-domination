@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "work sans";
+    font-family: "work sans";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#box {
+    margin-top: 10%;
+    height: 250px;
+    width: 250px;
+    background-color: crimson;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    from{
+        left: 0;
+        background-color: red;
+        rotate: 0;
+    }
+
+    to{
+        left: 60%;
+        background-color: blue;
+        rotate: 360deg;
+    }
+    
+}
