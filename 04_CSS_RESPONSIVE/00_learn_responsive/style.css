@@ -29,7 +29,7 @@ body {
     border: 2px solid #ffff;
 } */
 
-#parent {
+/* #parent {
     min-height: 100%;
     width: 100%;
     background-color: crimson;
@@ -47,4 +47,19 @@ body {
     width: 60%;
     background-color: lightgreen;
     border: 6px solid black;
+} */
+
+#box{
+    height: 500px;
+    width: 500px;
+    background-color: royalblue;
+}
+
+@media (max-width:600px) {
+    #box{
+        height: 300px;
+        width: 300px;
+        background-color: crimson;
+        border-radius: 50%;
+    }
 }
