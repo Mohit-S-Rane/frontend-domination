@@ -37,7 +37,7 @@ body {
     
 } */
 
-img{
+/* img{
     height: 300px;
     position: absolute;
     animation-name: chutki;
@@ -46,7 +46,7 @@ img{
 }
 
 @keyframes chutki {
-    /* from{
+    from{
         top: 0;
         left: 0;
     }
@@ -54,7 +54,8 @@ img{
     to{
         left: 80%;
         top: 50%;
-    } */
+    }
+
     0%{
         left: 0;
         top: 0;
@@ -73,4 +74,42 @@ img{
         rotate: 360deg;
     }
     
+} */
+
+#box1 {
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    position: relative;
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#box2 {
+    height: 300px;
+    width: 300px;
+    background-color: lightgreen;
+    position: relative;
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes box-anime {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 75%;
+    }
 }
