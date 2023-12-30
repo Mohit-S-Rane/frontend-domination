@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "work sans";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    /* background-color: gray; */
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav {
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h1 {
+    /* background-color: blue; */
+    font-family: "monument";
+    font-size: 35px;
+    letter-spacing: -1px;
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav h2 {
+    /* background-color: blue; */
+    font-size: 20px;
+    font-weight: 600;
+    height: 100%;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+}
+
+#nav h2:nth-last-child(2) {
+    width: 20%;
+}
+
+#nav h2:nth-last-child(1) {
+    width: 14%;
+}
+
+#center {
+    height: 92%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 4vw;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    position: relative;
+}
+
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    color: #ffff;
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over1 h1 {
+    font-family: "monument";
+    font-size: 3.6vw;
+    /* mix-blend-mode: difference; */
+}
+
+#over1 h2 {
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 2vw 2.2vw;
+    /* background-color: blue; */
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    /* border-bottom: 2px solid #ffff; */
+}
+
+#over2 {
+    border-top: 2px solid #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 0;
+}
+
+#over2 h4 {
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#over2 img {
+    height: 3vw;
+}
