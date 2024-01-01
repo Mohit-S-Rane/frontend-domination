@@ -137,38 +137,39 @@ body {
     height: 40vh;
     width: 100%;
     /* background-color: red; */
-    padding: 1vw;
+    /* padding: 1vw; */
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
 #container{
-    height: 95%;
+    height: 100%;
     width: 110%;
     /* background-color: blue; */
     display: inline-block;
-    padding: 1vw;
+    padding: 2vw;
     animation-name: anime;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-#scroll img{
+#scroll img {
     /* display: none; */
-    height: 100%;
+    height: 95%;
     border-radius: 50%;
-    width: 13%;
-    margin: 1vw;
+    width: 14%;
     object-fit: cover;
-    object-position: 30% 30%;
+    object-position:  30% 30%;
+    margin: 1vw;
 }
 
 @keyframes anime {
     from{
         transform: translateX(0);
     }
+
     to{
         transform: translateX(-100%);
     }
