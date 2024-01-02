@@ -11,6 +11,10 @@ body {
     width: 100%;
 }
 
+body{
+    background-color: #f8f8f8;
+}
+
 #main {
     height: 100%;
     width: 100%;
@@ -228,7 +232,8 @@ body {
 #page2-part1 {
     height: 100%;
     width: 60%;
-    background-image: url(https://images.unsplash.com/photo-1500336624523-d727130c3328?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fH);
+    background-image: url(#);
+    /* background-image: url(https://images.unsplash.com/photo-1500336624523-d727130c3328?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fH); */
     background-size: cover;
     background-position: center;
 }
@@ -268,4 +273,88 @@ body {
     font-weight: 500;
     /* background-color: aqua; */
     margin-left: 4vw;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page3>h1 {
+    text-align: center;
+    font-family: "monument";
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-bottom: 7vh;
+}
+
+.elem{
+    height: 18vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    transition: all ease 0.7s;
+}
+
+.elem img{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 0.7s;
+}
+
+.elem .elem-part2{
+    width: 45%;
+    /* background-color: red; */
+}
+
+.elem-part2 h1{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+.elem-part2 h5{
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+    /* background-color: red; */
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
+}
+
+.elem:nth-last-child(1) img{
+    left: 50%;
+}
+
+.elem:nth-last-child(3) img{
+    left: 50%;
+}
+
+.elem:hover{
+    background-color: #eddfdf;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 24%
 }
