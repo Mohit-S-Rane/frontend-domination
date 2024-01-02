@@ -46,6 +46,29 @@ body{
     font-family: "monument";
     font-size: 36px;
     letter-spacing: -1.5px;
+    position: relative;
+}
+
+#nav h1::after{
+    content: "©";
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 16%;
+    right: 11%;
+}
+
+#nav h1::before{
+    content: "model management";
+    font-family: gilroy;
+    font-weight: 500;
+    color: #666;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 12%;
+    right: 16%;
 }
 
 #nav h2 {
@@ -232,8 +255,8 @@ body{
 #page2-part1 {
     height: 100%;
     width: 60%;
-    background-image: url(#);
-    /* background-image: url(https://images.unsplash.com/photo-1500336624523-d727130c3328?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fH); */
+    /* background-image: url(#); */
+    background-image: url(https://images.unsplash.com/photo-1500336624523-d727130c3328?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fH);
     background-size: cover;
     background-position: center;
 }
