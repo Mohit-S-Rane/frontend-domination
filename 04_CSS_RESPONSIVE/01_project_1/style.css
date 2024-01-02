@@ -11,7 +11,7 @@ body {
     width: 100%;
 }
 
-body{
+body {
     background-color: #f8f8f8;
 }
 
@@ -35,21 +35,21 @@ body{
     justify-content: space-between;
 }
 
-#nav h1 {
-    /* font-size: 16px; */
-    /* background-color: yellow; */
-    height: 100%;
-    width: 21%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "monument";
-    font-size: 36px;
-    letter-spacing: -1.5px;
-    position: relative;
+#nav h3 {
+    display: none;
 }
 
-#nav h1::after{
+#nav h1 {
+    width: 21%;
+    justify-content: flex-start;
+    font-size: 36px;
+}
+
+#nav h3 {
+    display: none;
+}
+
+#nav h1::after {
     content: "©";
     font-family: gilroy;
     font-weight: 400;
@@ -59,7 +59,7 @@ body{
     right: 11%;
 }
 
-#nav h1::before{
+#nav h1::before {
     content: "model management";
     font-family: gilroy;
     font-weight: 500;
@@ -313,7 +313,7 @@ body{
     margin-bottom: 7vh;
 }
 
-.elem{
+.elem {
     height: 18vh;
     width: 100%;
     /* background-color: red; */
@@ -326,7 +326,7 @@ body{
     transition: all ease 0.7s;
 }
 
-.elem img{
+.elem img {
     height: 110px;
     width: 110px;
     position: absolute;
@@ -338,22 +338,22 @@ body{
     transition: all ease 0.7s;
 }
 
-.elem .elem-part2{
+.elem .elem-part2 {
     width: 45%;
     /* background-color: red; */
 }
 
-.elem-part2 h1{
+.elem-part2 h1 {
     font-size: 2.5vw;
     font-weight: 500;
 }
 
-.elem-part2 h5{
+.elem-part2 h5 {
     font-size: 1vw;
     font-weight: 600;
 }
 
-.elem h4{
+.elem h4 {
     font-size: 1.1vw;
     text-transform: uppercase;
     font-weight: 500;
@@ -361,28 +361,28 @@ body{
     /* background-color: red; */
 }
 
-.elem:nth-last-child(1){
+.elem:nth-last-child(1) {
     border-bottom: 2px solid #000;
 }
 
-.elem:nth-last-child(1) img{
+.elem:nth-last-child(1) img {
     left: 50%;
 }
 
-.elem:nth-last-child(3) img{
+.elem:nth-last-child(3) img {
     left: 50%;
 }
 
-.elem:hover{
+.elem:hover {
     background-color: #eddfdf;
 }
 
-.elem:hover img{
+.elem:hover img {
     opacity: 1;
     left: 24%
 }
 
-#marque{
+#marque {
     margin-top: 4vw;
     /* height: 15vh; */
     width: 100%;
@@ -395,7 +395,7 @@ body{
     border-bottom: 2px solid #000;
 }
 
-#marque h1{
+#marque h1 {
     display: inline-block;
     font-size: 3vw;
     text-transform: uppercase;
@@ -412,17 +412,167 @@ body{
     animation-timing-function: linear;
 }
 
-#footer{
+#footer {
     height: 100%;
     width: 100%;
 }
 
 @keyframes marque-anime {
-    from{
+    from {
         transform: translateX(0);
     }
 
-    to{
+    to {
         transform: translateX(calc(-100% - 20px));
+    }
+}
+
+@media (max-width:600px) {
+
+    #body {
+        overflow-x: hidden;
+    }
+
+    #nav {
+        height: 8vh;
+        margin-top: 10px;
+        padding: 0 5vw;
+    }
+
+    #nav h1 {
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+
+    #nav h3 {
+        display: block;
+    }
+
+    #nav h1::after {
+        display: none;
+    }
+
+    #nav h1::before {
+        display: none;
+    }
+
+    #nav h2 {
+        display: none;
+    }
+
+
+    #center {
+        height: 40%;
+
+        width: 100%;
+        /* background-color: red; */
+        padding: 4vw;
+        position: relative;
+    }
+
+    #content {
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        position: relative;
+    }
+
+    #content video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #overlay {
+        height: fit-content;
+        
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        /* background-color: red; */
+        padding: 2vw;
+        color: #fff;
+        /* background-color: rgba(0,0,0,0.154);
+    backdrop-filter: blur(2px); */
+    }
+
+    #over1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1vw;
+    }
+
+    #over1 h1 {
+        font-family: monument;
+        font-size: 5.6vw;
+        /* font-weight: 100; */
+        mix-blend-mode: difference;
+    }
+
+    #over1 h2 {
+        font-size: 2vw;
+        padding: 3vw 3.2vw;
+        /* background-color: blue; */
+        border-radius: 50%;
+        border: 1px solid #fff;
+    }
+
+    #over2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #fff;
+        padding: 1.5vw 0;
+    }
+
+    #over2 h2 {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    #over2 img {
+        height: 5vw;
+    }
+
+    #scroll {
+        height: 20vh;
+        width: 100%;
+        /* background-color: red; */
+        /* padding: 1vw; */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    #container {
+        height: 100%;
+        width: 210%;
+        display: inline-block;
+        padding: 2vw;
+        animation-name: anime;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    #scroll img {
+        height: 90%;
+        border-radius: 50%;
+        width: 15.6%;
+        object-fit: cover;
+        object-position: 30% 30%;
+        margin: 1vw;
+    }
+    
+    @keyframes anime {
+        from {
+            transform: translateX(0);
+        }
+    
+        to {
+            transform: translateX(-100%);
+        }
     }
 }
