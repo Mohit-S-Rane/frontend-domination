@@ -63,7 +63,7 @@ body{
     color: #fff;
     border-radius: 50px;
     font-size: 14px;
-    margin: 0 12px;
+    margin: 0 12px; 
 }
 
 #nav-part2 button:nth-child(1){
@@ -75,4 +75,53 @@ body{
 #content{
     height: calc(100% - 70px);
     /* background-color: crimson; */
+    padding-top: 100px;
 }
+
+#content h3{
+    background-color: #F2B0EA;
+    padding: 8px 16px;
+    border-radius: 50px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-family: "Source Serif 4";
+    font-weight: 100;
+}
+
+#content h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0;
+    font-family: "Source Serif 4";
+    font-weight: 100;
+    line-height: 60px;
+}
+
+#content h4{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#content button{
+    padding: 14px 20px;
+    font-weight: 600;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 30px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
