@@ -75,7 +75,10 @@ body{
 #content{
     height: calc(100% - 70px);
     /* background-color: crimson; */
-    padding-top: 100px;
+    padding-top: 40px;
+    white-space: nowrap;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
 }
 
 #content h3{
@@ -86,18 +89,18 @@ body{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Source Serif 4";
     font-weight: 100;
 }
 
 #content h1{
-    font-size: 60px;
+    font-size: 58px;
     text-align: center;
-    margin: 30px 0;
+    margin: 16px 0;
     font-family: "Source Serif 4";
     font-weight: 100;
-    line-height: 60px;
+    line-height: 58px;
 }
 
 #content h4{
@@ -114,14 +117,106 @@ body{
     color: #fff;
     border-radius: 50px;
     font-size: 14px;
-    margin: 30px 0;
+    margin: 22px 0;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
+#bottom {
+    height: 320px;
+    width: 100%;
+    /* background-color: red; */
+    padding: 5px;
+    /* display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 
+}
 
+#bottom::-webkit-scrollbar{
+    display: none;
+}
 
+.elem{
+    display: inline-block;
+    height: 100%;
+    width: 240px;
+    margin-right: 30px;
+    border-radius: 20px;
+    background-color: royalblue;
+    overflow: hidden;
+    position: relative;
+    /* border: 2px solid #000; */
+    /* flex-shrink: 0; */
+    animation-name: scroll-anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem .text-bottom{
+    height: 28%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: transparent;
+}
+
+.text-bottom{
+    padding: 0 20px;
+}
+
+.text-bottom h5{
+    color: #fff;
+    text-align: left;
+    padding: 2px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.text-bottom #button-tag{
+    background-color: transparent;
+    padding: 3px 12px;
+    border: 1px solid #ffffff5c;
+    margin: 6px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    left: 12%;
+    font-weight: 600;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    margin-top: 8%;
+}
+
+@keyframes scroll-anime {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translate(-300%);
+    }
+}
