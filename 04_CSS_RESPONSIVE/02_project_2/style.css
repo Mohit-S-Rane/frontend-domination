@@ -204,13 +204,6 @@ body{
     font-weight: 600;
 }
 
-#page2{
-    height: 100%;
-    width: 100%;
-    background-color: gray;
-    margin-top: 8%;
-}
-
 @keyframes scroll-anime {
     from{
         transform: translateX(0);
@@ -219,4 +212,80 @@ body{
     to{
         transform: translate(-300%);
     }
+
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    /* background-color: gray; */
+    margin-top: 8%;
+    position: relative;
+    padding: 18px 40px;
+}
+
+#page2 h1{
+    text-align: center;
+    font-family: "Source Serif 4";
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+.box{
+    height: 220px;
+    width: 294px;
+    background-color: red;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-bottom{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient( transparent, rgba(0, 0, 0, 0.763));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.3s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box-bottom h5{
+    font-size: 16px;
+}
+
+.box-bottom i{
+    background-color: #fff;
+    padding: 8px 9px;
+    color: #000;
+    border-radius: 50%;
+}
+
+.box:hover .box-bottom{
+    bottom: 0;
+}
+
+.box:hover{
+    box-shadow: 0px 2px 20px black;
 }
