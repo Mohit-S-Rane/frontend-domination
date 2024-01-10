@@ -193,9 +193,20 @@
 // })
 
 
-var textarea = document.querySelector('textarea')
-var counter = document.querySelector('#counter')
+// var textarea = document.querySelector('textarea')
+// var counter = document.querySelector('#counter')
 
-textarea.addEventListener('input', function(){
-    counter.textContent = textarea.value.length
+// textarea.addEventListener('input', function(){
+//     counter.textContent = textarea.value.length
+// })
+
+
+var prgs = document.querySelector('#progress-bar')
+
+window.addEventListener('scroll', function(){
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;  
+    var scrolled = (winScroll / height) * 100;
+
+    prgs.style.width = scrolled + '%'
 })
