@@ -118,22 +118,36 @@
 //     })
 // }
 
-var divs = document.querySelectorAll('.tab')
-var texts = document.querySelectorAll('h3')
+// var divs = document.querySelectorAll('.tab')
+// var texts = document.querySelectorAll('h3')
 
-texts[0].style.display = 'block';
-texts[0].style.width = '70%';
+// texts[0].style.display = 'block';
+// texts[0].style.width = '70%';
 
-divs.forEach(function(div, index){
-    div.addEventListener("click", function(){
-        hideAllText();
-        texts[index].style.display = "block"
-        texts[index].style.width = "70%"
-    })
-})
+// divs.forEach(function(div, index){
+//     div.addEventListener("click", function(){
+//         hideAllText();
+//         texts[index].style.display = "block"
+//         texts[index].style.width = "70%"
+//     })
+// })
 
-function hideAllText(){
-    texts.forEach(function(text){
-        text.style.display = "none"
-    })
-}
+// function hideAllText(){
+//     texts.forEach(function(text){
+//         text.style.display = "none"
+//     })
+// }
+
+
+var prg = document.querySelector("#progress")
+var h3 = document.querySelector('h3')
+
+var count = 0
+var int = setInterval(function(){
+    if(count === 100){
+        clearInterval(int)
+        h3.style.opacity = 1
+    }
+    count++
+    prg.style.width = count+'%'
+}, 50)
