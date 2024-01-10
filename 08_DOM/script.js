@@ -35,31 +35,48 @@
 // })
 
 
-var add = document.querySelector('#add')
-var remove = document.querySelector('#remove')
-var inp = document.querySelector('input')
-var ul = document.querySelector('ul')
+// var add = document.querySelector('#add')
+// var remove = document.querySelector('#remove')
+// var inp = document.querySelector('input')
+// var ul = document.querySelector('ul')
 
-var lis;
+// var lis;
+// var li;
 
-var li;
+// add.addEventListener('click', function(){
+//     li = document.createElement('li')
+//     if(inp.value.trim() === ''){}
+//     else{
+//         li.textContent = inp.value
+//         ul.appendChild(li)
+//         inp.value = ""
+//     }
+// })
 
-add.addEventListener('click', function(){
-    li = document.createElement('li')
-    if(inp.value.trim() === ''){}
-    else{
-        li.textContent = inp.value
-        ul.appendChild(li)
-        inp.value = ""
-    }
+// remove.addEventListener('click', function(){
+//     try {
+//         lis = document.querySelectorAll('li')
+//         // console.log(lis[lis.length -1]);
+//         ul.removeChild(lis[lis.length -1])
+//     } catch (error) {
+//         console.error('No li is exist for remove');
+//     }
+// })
+
+var start = document.querySelector('#start')
+var stop = document.querySelector('#stop')
+var h3 = document.querySelector('h3')
+
+var int
+
+start.addEventListener('click', function(){
+    var count = 0
+    int = setInterval(function(){
+        h3.textContent = count
+        count++
+    }, 1000)
 })
 
-remove.addEventListener('click', function(){
-    try {
-        lis = document.querySelectorAll('li')
-        // console.log(lis[lis.length -1]);
-        ul.removeChild(lis[lis.length -1])
-    } catch (error) {
-        console.error('No li is exist for remove');
-    }
+stop.addEventListener('click', function(){
+    clearInterval(int)
 })
