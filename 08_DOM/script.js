@@ -18,18 +18,48 @@
 // })
 
 
-var form = document.querySelector("form")
-var inps = document.querySelectorAll('input[type="text"]')
-var err = document.querySelector('h4')
-var lv_flag
+// var form = document.querySelector("form")
+// var inps = document.querySelectorAll('input[type="text"]')
+// var err = document.querySelector('h4')
+// var lv_flag
 
-form.addEventListener('submit', function (ev) {
-    ev.preventDefault()
-    for (var i = 0; i < inps.length; i++) {
-        if (inps[i].value.trim() === '') {
-            err.textContent = 'Error, some fields blank'
-            err.style.color = 'red'
-            break;
-        }
+// form.addEventListener('submit', function (ev) {
+//     ev.preventDefault()
+//     for (var i = 0; i < inps.length; i++) {
+//         if (inps[i].value.trim() === '') {
+//             err.textContent = 'Error, some fields blank'
+//             err.style.color = 'red'
+//             break;
+//         }
+//     }
+// })
+
+
+var add = document.querySelector('#add')
+var remove = document.querySelector('#remove')
+var inp = document.querySelector('input')
+var ul = document.querySelector('ul')
+
+var lis;
+
+var li;
+
+add.addEventListener('click', function(){
+    li = document.createElement('li')
+    if(inp.value.trim() === ''){}
+    else{
+        li.textContent = inp.value
+        ul.appendChild(li)
+        inp.value = ""
+    }
+})
+
+remove.addEventListener('click', function(){
+    try {
+        lis = document.querySelectorAll('li')
+        // console.log(lis[lis.length -1]);
+        ul.removeChild(lis[lis.length -1])
+    } catch (error) {
+        console.error('No li is exist for remove');
     }
 })
