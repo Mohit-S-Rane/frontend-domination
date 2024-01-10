@@ -152,41 +152,50 @@
 //     prg.style.width = count+'%'
 // }, 50)
 
-var input = document.querySelector('input');
-var data = [
-    {name: "harsh", src: "https://images.unsplash.com/photo-1627087820883-7a102b79179a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {name: "harshita", src: "https://images.unsplash.com/photo-1589279715734-6631a314dfa2?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {name: "harshika", src: "https://images.unsplash.com/photo-1567186937675-a5131c8a89ea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8f"},
-    {name: "shyam", src: "https://images.unsplash.com/photo-1584043720379-b56cd9199c94?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8f"},
-]
 
-var pers = "";
+// var input = document.querySelector('input');
+// var data = [
+//     {name: "harsh", src: "https://images.unsplash.com/photo-1627087820883-7a102b79179a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
+//     {name: "harshita", src: "https://images.unsplash.com/photo-1589279715734-6631a314dfa2?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
+//     {name: "harshika", src: "https://images.unsplash.com/photo-1567186937675-a5131c8a89ea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8f"},
+//     {name: "shyam", src: "https://images.unsplash.com/photo-1584043720379-b56cd9199c94?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8f"},
+// ]
 
-data.forEach(function(elem){
-    pers += `<div class="person">
-    <div class="img">
-        <img src="${elem.src}" alt="">
-    </div>
-    <h4>${elem.name}</h4>
-</div>`
-})
+// var pers = "";
 
-document.querySelector('.people').innerHTML = pers
+// data.forEach(function(elem){
+//     pers += `<div class="person">
+//     <div class="img">
+//         <img src="${elem.src}" alt="">
+//     </div>
+//     <h4>${elem.name}</h4>
+// </div>`
+// })
 
-input.addEventListener("input", function(){
-    var matching = data.filter(function(e){
-        return e.name.startsWith(input.value)
-    })
+// document.querySelector('.people').innerHTML = pers
 
-    var newusers = ""
-    matching.forEach(function(elem){
-        newusers += `<div class="person">
-        <div class="img">
-            <img src="${elem.src}" alt="">
-        </div>
-        <h4>${elem.name}</h4>
-    </div>`
-    })
+// input.addEventListener("input", function(){
+//     var matching = data.filter(function(e){
+//         return e.name.startsWith(input.value)
+//     })
+
+//     var newusers = ""
+//     matching.forEach(function(elem){
+//         newusers += `<div class="person">
+//         <div class="img">
+//             <img src="${elem.src}" alt="">
+//         </div>
+//         <h4>${elem.name}</h4>
+//     </div>`
+//     })
     
-    document.querySelector('.people').innerHTML = newusers
+//     document.querySelector('.people').innerHTML = newusers
+// })
+
+
+var textarea = document.querySelector('textarea')
+var counter = document.querySelector('#counter')
+
+textarea.addEventListener('input', function(){
+    counter.textContent = textarea.value.length
 })
