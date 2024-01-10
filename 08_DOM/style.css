@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'gilroy';
 }
 
 html,body{
@@ -14,3 +15,23 @@ html,body{
     color: red;
     font-family: 'gilroy';
 } */
+
+#tabs{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.tab{
+    padding: 12px 22px;
+    background-color: #c4b7b7;
+    border: 2px solid #dadada;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+h3{
+    display: none;
+    margin-top: 20px;
+}

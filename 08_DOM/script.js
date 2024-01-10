@@ -63,20 +63,77 @@
 //     }
 // })
 
-var start = document.querySelector('#start')
-var stop = document.querySelector('#stop')
-var h3 = document.querySelector('h3')
 
-var int
+// var start = document.querySelector('#start')
+// var stop = document.querySelector('#stop')
+// var h3 = document.querySelector('h3')
 
-start.addEventListener('click', function(){
-    var count = 0
-    int = setInterval(function(){
-        h3.textContent = count
-        count++
-    }, 1000)
+// var int
+
+// start.addEventListener('click', function(){
+//     var count = 0
+//     int = setInterval(function(){
+//         h3.textContent = count
+//         count++
+//     }, 1000)
+// })
+
+// stop.addEventListener('click', function(){
+//     clearInterval(int)
+// })
+
+
+// var home = document.querySelector('#home')
+// var about = document.querySelector('#about')
+// var contact = document.querySelector('#contact')
+
+// var hometext = document.querySelector('#hometext')
+// var abouttext = document.querySelector('#abouttext')
+// var contacttext = document.querySelector('#contacttext')
+
+// hometext.style.display = 'block'
+// hometext.style.width = '70%'
+
+// home.addEventListener('click', function(){
+//     removeAllTab();
+//     hometext.style.display = 'block'
+//     hometext.style.width = '70%'
+// })
+
+// about.addEventListener('click', function(){
+//     removeAllTab();
+//     abouttext.style.display = 'block'
+//     abouttext.style.width = '70%'
+// })
+
+// contact.addEventListener('click', function(){
+//     removeAllTab();
+//     contacttext.style.display = 'block'
+//     contacttext.style.width = '70%'
+// })
+
+// function removeAllTab(){
+//     document.querySelectorAll('h3').forEach(function(h3){
+//         h3.style.display = 'none'
+//     })
+// }
+
+var divs = document.querySelectorAll('.tab')
+var texts = document.querySelectorAll('h3')
+
+texts[0].style.display = 'block';
+texts[0].style.width = '70%';
+
+divs.forEach(function(div, index){
+    div.addEventListener("click", function(){
+        hideAllText();
+        texts[index].style.display = "block"
+        texts[index].style.width = "70%"
+    })
 })
 
-stop.addEventListener('click', function(){
-    clearInterval(int)
-})
+function hideAllText(){
+    texts.forEach(function(text){
+        text.style.display = "none"
+    })
+}
