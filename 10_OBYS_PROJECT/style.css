@@ -148,11 +148,9 @@ body{
     margin-left: 27%;
     height: fit-content;
     /* background-color: red; */
-    overflow: hidden;
+    overflow-y: hidden;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 9999;
 }
 
 .hero:nth-child(2){
@@ -164,7 +162,18 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
+    position: relative;
 }
+
+#hero1::before {
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: 20%;
+    top: 31%;
+}    
 
 .hero h2{
     font-size: 7.2vw;
@@ -254,6 +263,17 @@ body{
 #page4-content h1{
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%
 }
 
 #page4-content .underline{
@@ -380,4 +400,68 @@ body{
     font-style: italic;
     font-family: "silk serif";
     color: transparent;
+}
+
+#footer{
+    height: 85vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding-left: 28vw;
+    padding-right: 2vw;
+}
+
+#footer h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%
+}
+
+.underline{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw 0;
+
+}
+
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 6vw;  
+}
+
+#footer-div h6{
+    font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
+} 
+
+.box{
+    width: 20%;
+}
+
+#footer-div h5{
+    font-size: 1.4vw;
+    font-weight: 500;
+    /* margin: 0.1vh 0; */
+} 
+
+#footer>h5{
+    font-size: 1vw;
+    font-weight: 500;
 }
