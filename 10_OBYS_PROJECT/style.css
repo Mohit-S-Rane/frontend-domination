@@ -17,7 +17,7 @@ html, body{
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.729);
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     mix-blend-mode: difference;
     transform: translate(-50%, -50%);
 }
@@ -142,6 +142,13 @@ html, body{
     /* background-color: red; */
     width: 72%;
     margin-left: 27%;
+    height: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
 }
 
 .hero:nth-child(2){
@@ -153,4 +160,17 @@ html, body{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
+}
+
+.hero h2, .hero h3{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 500;
 }
