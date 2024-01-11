@@ -56,10 +56,10 @@ html, body{
 }
 
 .line h2{
-    font-size: 5.5vw;
+    font-size: 5vw;
     text-transform: uppercase;
-    animation-name: anime;
-    animation-duration: 5s;
+    opacity: 0;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
