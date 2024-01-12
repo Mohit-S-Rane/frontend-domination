@@ -352,13 +352,13 @@ body{
     color: transparent;
     display: inline-block;
     margin-right: 16px;
-    animation-name: anime;
+    animation-name: anime_1;
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-@keyframes anime {
+@keyframes anime_1 {
     from{
         transform: translateX(0);
     }
@@ -383,7 +383,7 @@ body{
     color: transparent;
     display: inline-block;
     transform: translateX(calc(-100% - 20px));
-    animation-name: anime;
+    animation-name: anime_1;
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
