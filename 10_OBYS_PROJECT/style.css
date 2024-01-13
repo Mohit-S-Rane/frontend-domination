@@ -14,6 +14,7 @@ body {
 
 body {
     overflow-x: hidden;
+    cursor: none;
 }
 
 .mousefollower {
@@ -41,6 +42,7 @@ body {
     z-index: 999;
     background-color: #030303;
     padding: 25vh 10vw;
+    cursor: none;
 }
 
 .line {
@@ -596,7 +598,7 @@ h6 {
 }
 
 #footer {
-    height: 92vh;
+    height: 100vh;
     width: 100%;
     /* background-color: red; */
     position: relative;
@@ -605,20 +607,43 @@ h6 {
 }
 
 #footer h1 {
-    font-size: 7vw;
+    font-size: 7.2vw;
     text-transform: uppercase;
     /* background-color: blue; */
     position: relative;
 }
 
-#footer h1::before {
+#footer-text {
+    position: relative;
+    /* background-color: red; */
+}
+
+#footer-text h2 {
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10%;
+    font-weight: 500;
+
+    left: 0;
+    font-family: "silk serif";
+}
+
+#footer-text h2 span {
+    font-family: "silk serif";
+    opacity: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+#footer-text::before {
     content: "04";
     position: absolute;
     font-size: 3vw;
     font-weight: 100;
     font-family: "silk serif";
-    left: -12%;
-    top: 8%
+    left: -13%;
+    top: 6%;
 }
 
 .underline {
@@ -626,12 +651,17 @@ h6 {
     width: 100%;
     background-color: #fff;
     margin: 3vw 0;
-
 }
 
 #footer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-right: 15vw;
     padding-top: 4vw;
@@ -655,8 +685,8 @@ h6 {
 }
 
 #footer>h5 {
-    font-size: 1vw;
     font-weight: 500;
+    font-size: 1vw;
 }
 
 ._canvas_container {
@@ -664,7 +694,7 @@ h6 {
     pointer-events: none;
 }
 
-#flag{
+#flag {
     height: 20vw;
     position: absolute;
     top: 0;
@@ -673,8 +703,12 @@ h6 {
     transform: translate(-50%, -50%);
 }
 
-#hero3{
+#hero3 {
     /* background-color: red; */
     z-index: 999;
     position: relative;
 }
+
+/* #footer h1:hover{
+    background-color: red;
+} */
