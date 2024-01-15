@@ -64,7 +64,7 @@ function loadingAnimation() {
     tl.to("#loader", {
         opacity: 0,
         duration: 0.4,
-        delay: 0
+        delay: 2.4
     })
 
     tl.from("#page1", {
